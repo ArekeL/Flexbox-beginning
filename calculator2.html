@@ -26,22 +26,52 @@
 
     body {
       display: flex;
-      flex-direction: column;
-      width: 500px;
-
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
     }
 
     .panel {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 60%;
+      min-width: 500px;
       height: 85vh;
-      flex-basis: 60vw;
+      text-align: right;
+      font-family: Arial, Helvetica, sans-serif;
+      justify-content: space-between;
+      align-content: space-between;
 
     }
 
     .result {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-basis: 100%;
+      height: 15vh;
       background-color: black;
       color: white;
+      /* line-height: 15vh;
+      text-align: right; */
+      padding-right: 20px;
+      font-size: 5vh;
+    }
+
+    div.result~div {
+      height: 10vh;
+      flex-basis: 30%;
+      background-color: cadetblue;
+      font-size: 6vh;
+      line-height: 10vh;
+      text-align: center;
+      color: white;
+    }
+
+    div>div:nth-last-child(1),
+    div>div:nth-last-child(2) {
+      flex-basis: 45%;
     }
   </style>
 </head>
