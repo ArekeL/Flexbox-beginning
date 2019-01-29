@@ -64,7 +64,35 @@
       background-color: black;
       align-self: stretch;
       /* width: 100% druga opcja */
-      flex-basis: 15vh;
+      flex-basis: 10vh;
+    }
+
+    @media (max-width: 1024px) {
+      header {
+        order: -1;
+      }
+
+      /* 1 - option */
+      /* section {
+        flex-wrap: wrap;
+      }
+
+      aside {
+        flex-basis: 100%;
+      } */
+
+      /* 2 - option */
+      section {
+        flex-direction: column;
+      }
+
+      main {
+        flex-grow: 2;
+      }
+
+      aside {
+        flex-grow: 1;
+      }
     }
   </style>
 </head>
